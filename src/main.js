@@ -3,7 +3,8 @@ import App from './App.vue';
 import VueRouter from 'vue-router';
 import UrlShortener from './components/url-shortener';
 import TopHits from './components/top-hits';
-import { createProvider } from './vue-apollo'
+import { createProvider } from './vue-apollo';
+import { API } from './config';
 
 Vue.config.productionTip = false;
 
@@ -18,6 +19,9 @@ const router = new VueRouter({ routes });
 
 new Vue({
   router,
-  apolloProvider: createProvider(),
+  apolloProvider: createProvider({
+    httpEndpoint: `${API}/graphql`,
+    wsEndpoint: null,
+  }),
   render: h => h(App)
 }).$mount('#app')
