@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "type": "static",
+  "public": true,
+  "static": {
+    "public": "dist",
+    "directoryListing": false
+  },
+  "name": "shortener-gui",
+  "alias": [
+    "shortener.herson.hn"
+  ],
+  "files": [
+    "dist/"
+  ]
+}
