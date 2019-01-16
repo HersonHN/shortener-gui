@@ -1,5 +1,6 @@
 <template>
-  <div class="shortener">
+  <section class="url-shortener">
+    <router-link to="/top-hits">Top Hits</router-link>
     <h1>URL shortener</h1>
     <p>
       type an url:
@@ -10,7 +11,7 @@
       <a :href="short" target="_blank">{{short}}</a>
       <button type="button" name="button" @click="copy">Copy to clipboard</button>
     </p>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -20,7 +21,7 @@ import { API } from '../config';
 const URL_REGEX = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
 
 export default {
-  name: 'Shoertener',
+  name: 'UrlShoertener',
   data: () => ({
     long: '',
     short: ''

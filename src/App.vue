@@ -1,18 +1,16 @@
 <template>
   <div class="global-wrapper" id="app">
     <div class="content">
-      <Shortener />
+      <router-view :key="$route.fullPath" />
     </div>
   </div>
 </template>
 
 <script>
-import Shortener from './components/shortener';
 
 export default {
   name: 'app',
   components: {
-    Shortener
   }
 }
 </script>
