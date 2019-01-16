@@ -26,7 +26,7 @@ VUE_APP_SHORTENER_API_URL=https://s.herson.hn
 
 **⚠️ DO NOT add the slash at the end of the url. ⚠️**
 
-You can host both gui and api under the same hostname, but to built the code you still need to set the url.
+**☝️ You can host both gui and api under the same hostname, but to built the code you still need to set the url. ☝️**
 
 ## Running
 
@@ -42,7 +42,7 @@ yarn serve
 yarn build
 ```
 
-## Running both
+## Running GUI and API on the Same Host
 
-If you choose to build the code, just copy the `dist/` folder over your `shortener-api` and rename it as `public/`.
+If you choose to build the code, just copy the `dist/` folder over your `shortener-api` instance and rename it as `public/`.
 After that you can run the server and if the `VUE_APP_SHORTENER_API_URL` variable matches the hostname for the api, It shouldn't give you any problems.
