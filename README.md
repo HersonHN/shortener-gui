@@ -24,9 +24,9 @@ You need to specify the url for the backend api, to do so create an `.env` file 
 VUE_APP_SHORTENER_API_URL=https://s.herson.hn
 ```
 
-**⚠️ DO NOT add the slash at the end of the url. ⚠️**
+**:warning: DO NOT add the slash at the end of the url. :warning:**
 
-**☝️ You can host both gui and api under the same hostname, but to built the code you still need to set the url. ☝️**
+**:point_up: You can host both gui and api under the same hostname, but to built the code you still need to set the url. :point_up:**
 
 ## Running
 
